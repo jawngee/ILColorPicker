@@ -6,10 +6,10 @@
 //  Copyright 2011 Interfacelab LLC. All rights reserved.
 //
 
-#import "ILColorPicker.h"
+#import "ILColorPickerView.h"
 
 
-@implementation ILColorPicker
+@implementation ILColorPickerView
 
 @synthesize delegate, pickerLayout, color;
 
@@ -19,14 +19,13 @@
 {
     [super setup];
     
-    self.clipsToBounds=YES;
     self.opaque=NO;
     self.backgroundColor=[UIColor clearColor];
     
-    huePicker=[[ILHuePicker alloc] initWithFrame:CGRectZero];
+    huePicker=[[ILHuePickerView alloc] initWithFrame:CGRectZero];
     [self addSubview:huePicker];
     
-    self.pickerLayout=ILColorPickerLayoutBottom;
+    self.pickerLayout=ILColorPickerViewLayoutBottom;
 }
 
 -(void)dealloc
@@ -36,7 +35,7 @@
 
 #pragma mark - Property Set/Get
 
--(void)setPickerLayout:(ILColorPickerLayout)layout
+-(void)setPickerLayout:(ILColorPickerViewLayout)layout
 {
     pickerLayout=layout;
 
@@ -47,22 +46,22 @@
         satPicker=nil;
     }
     
-    if (layout==ILColorPickerLayoutBottom)
+    if (layout==ILColorPickerViewLayoutBottom)
     {
-        huePicker.pickerOrientation=ILHuePickerOrientationHorizontal;
+        huePicker.pickerOrientation=ILHuePickerViewOrientationHorizontal;
         [huePicker setFrame:CGRectMake(0, self.frame.size.height-38, self.frame.size.width, 38)];
         
-        satPicker=[[ILSaturationBrightnessPicker alloc] initWithFrame:CGRectMake(0, 0, self.frame.size.width, self.frame.size.height-10-38)];
+        satPicker=[[ILSaturationBrightnessPickerView alloc] initWithFrame:CGRectMake(0, 0, self.frame.size.width, self.frame.size.height-10-38)];
         satPicker.delegate=self;
         huePicker.delegate=satPicker;
         [self addSubview:satPicker];
     }
     else
     {
-        huePicker.pickerOrientation=ILHuePickerOrientationVertical;
+        huePicker.pickerOrientation=ILHuePickerViewOrientationVertical;
         [huePicker setFrame:CGRectMake(self.frame.size.width-38, 0, 38, self.frame.size.height)];
         
-        satPicker=[[ILSaturationBrightnessPicker alloc] initWithFrame:CGRectMake(0, 0, self.frame.size.width-10-38, self.frame.size.height)];
+        satPicker=[[ILSaturationBrightnessPickerView alloc] initWithFrame:CGRectMake(0, 0, self.frame.size.width-10-38, self.frame.size.height)];
         satPicker.delegate=self;
         huePicker.delegate=satPicker;
         [self addSubview:satPicker];
@@ -82,7 +81,7 @@
 
 #pragma mark - ILSaturationBrightnessPickerDelegate
 
--(void)colorPicked:(UIColor *)newColor forPicker:(ILSaturationBrightnessPicker *)picker
+-(void)colorPicked:(UIColor *)newColor forPicker:(ILSaturationBrightnessPickerView *)picker
 {
     [delegate colorPicked:newColor forPicker:self];
 }

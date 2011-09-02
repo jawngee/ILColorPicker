@@ -13,9 +13,9 @@
 
 - (void)viewDidLoad
 {
+    colorPicker.pickerLayout=ILColorPickerViewLayoutRight;
+
     [super viewDidLoad];
-    
-    colorPicker.pickerLayout=ILColorPickerLayoutRight;
 }
 
 @end

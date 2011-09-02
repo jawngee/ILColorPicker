@@ -30,7 +30,7 @@
 
 #pragma mark - ILSaturationBrightnessPickerDelegate implementation
 
--(void)colorPicked:(UIColor *)newColor forPicker:(ILSaturationBrightnessPicker *)picker
+-(void)colorPicked:(UIColor *)newColor forPicker:(ILSaturationBrightnessPickerView *)picker
 {
     colorChip.backgroundColor=newColor;
 }

@@ -7,13 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "ILSaturationBrightnessPicker.h"
-#import "ILHuePicker.h"
+#import "ILSaturationBrightnessPickerView.h"
+#import "ILHuePickerView.h"
 
-@interface ILColorPickerDualExampleController : UIViewController<ILSaturationBrightnessPickerDelegate> {
+@interface ILColorPickerDualExampleController : UIViewController<ILSaturationBrightnessPickerViewDelegate> {
     IBOutlet UIView *colorChip;
-    IBOutlet ILSaturationBrightnessPicker *colorPicker;
-    IBOutlet ILHuePicker *huePicker;
+    IBOutlet ILSaturationBrightnessPickerView *colorPicker;
+    IBOutlet ILHuePickerView *huePicker;
 }
 
 @end

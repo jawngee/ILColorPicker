@@ -12,16 +12,16 @@
  * Controls the orientation of the picker
  */
 typedef enum {
-    ILHuePickerOrientationHorizontal     =   0,
-    ILHuePickerOrientationVertical       =   1
-} ILHuePickerOrientation;
+    ILHuePickerViewOrientationHorizontal     =   0,
+    ILHuePickerViewOrientationVertical       =   1
+} ILHuePickerViewOrientation;
 
-@class ILHuePicker;
+@class ILHuePickerView;
 
 /**
  * Hue picker delegate
  */
-@protocol ILHuePickerDelegate
+@protocol ILHuePickerViewDelegate
 
 /**
  * Called when the user picks a new hue
@@ -29,23 +29,23 @@ typedef enum {
  * @param hue 0..1 The hue the user picked
  * @param picker The picker used
  */
--(void)huePicked:(float)hue picker:(ILHuePicker *)picker;
+-(void)huePicked:(float)hue picker:(ILHuePickerView *)picker;
 
 @end
 
 /**
  * Displays a gradient allowing the user to select a hue
  */
-@interface ILHuePicker : ILView {
-    id<ILHuePickerDelegate> delegate;
+@interface ILHuePickerView : ILView {
+    id<ILHuePickerViewDelegate> delegate;
     float hue;
-    ILHuePickerOrientation pickerOrientation;
+    ILHuePickerViewOrientation pickerOrientation;
 }
 
 /**
  * Delegate
  */
-@property (assign, nonatomic) IBOutlet id<ILHuePickerDelegate> delegate;
+@property (assign, nonatomic) IBOutlet id<ILHuePickerViewDelegate> delegate;
 
 /**
  * The current hue
@@ -60,7 +60,7 @@ typedef enum {
 /**
  * Orientation
  */
-@property (assign, nonatomic) ILHuePickerOrientation pickerOrientation;
+@property (assign, nonatomic) ILHuePickerViewOrientation pickerOrientation;
 
 
 @end

@@ -16,14 +16,14 @@
 		FFCFD45B14104A5E00D62529 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = FFCFD45914104A5E00D62529 /* MainWindow.xib */; };
 		FFCFD45E14104A5E00D62529 /* ILColorPickerDualExampleController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFCFD45D14104A5E00D62529 /* ILColorPickerDualExampleController.m */; };
 		FFCFD46114104A5E00D62529 /* ILColorPickerDualExampleController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FFCFD45F14104A5E00D62529 /* ILColorPickerDualExampleController.xib */; };
-		FFCFD46A14104B9300D62529 /* ILSaturationBrightnessPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = FFCFD46914104B9300D62529 /* ILSaturationBrightnessPicker.m */; };
-		FFCFD4781410741B00D62529 /* ILHuePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = FFCFD4771410741B00D62529 /* ILHuePicker.m */; };
+		FFCFD46A14104B9300D62529 /* ILSaturationBrightnessPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = FFCFD46914104B9300D62529 /* ILSaturationBrightnessPickerView.m */; };
 		FFCFD47C14108FF900D62529 /* UIColor+GetHSB.m in Sources */ = {isa = PBXBuildFile; fileRef = FFCFD47B14108FF900D62529 /* UIColor+GetHSB.m */; };
-		FFCFD4801410B97A00D62529 /* ILColorPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = FFCFD47F1410B97A00D62529 /* ILColorPicker.m */; };
+		FFCFD4801410B97A00D62529 /* ILColorPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = FFCFD47F1410B97A00D62529 /* ILColorPickerView.m */; };
 		FFCFD4841410C33800D62529 /* ILColorPickerLayoutBottomExampleController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFCFD4821410C33800D62529 /* ILColorPickerLayoutBottomExampleController.m */; };
 		FFCFD4851410C33800D62529 /* ILColorPickerLayoutBottomExampleController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FFCFD4831410C33800D62529 /* ILColorPickerLayoutBottomExampleController.xib */; };
 		FFCFD4881410C71A00D62529 /* ILColorPickerLayoutRightExampleController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFCFD4871410C71A00D62529 /* ILColorPickerLayoutRightExampleController.m */; };
 		FFCFD4CB1411787700D62529 /* ILView.m in Sources */ = {isa = PBXBuildFile; fileRef = FFCFD4CA1411787700D62529 /* ILView.m */; };
+		FFCFD4E314117C8000D62529 /* ILHuePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = FFCFD4E214117C8000D62529 /* ILHuePickerView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,14 +41,13 @@
 		FFCFD45C14104A5E00D62529 /* ILColorPickerDualExampleController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ILColorPickerDualExampleController.h; sourceTree = "<group>"; };
 		FFCFD45D14104A5E00D62529 /* ILColorPickerDualExampleController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ILColorPickerDualExampleController.m; sourceTree = "<group>"; };
 		FFCFD46014104A5E00D62529 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ILColorPickerDualExampleController.xib; sourceTree = "<group>"; };
-		FFCFD46814104B9300D62529 /* ILSaturationBrightnessPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILSaturationBrightnessPicker.h; sourceTree = "<group>"; };
-		FFCFD46914104B9300D62529 /* ILSaturationBrightnessPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ILSaturationBrightnessPicker.m; sourceTree = "<group>"; };
-		FFCFD4761410741B00D62529 /* ILHuePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILHuePicker.h; sourceTree = "<group>"; };
-		FFCFD4771410741B00D62529 /* ILHuePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ILHuePicker.m; sourceTree = "<group>"; };
+		FFCFD46814104B9300D62529 /* ILSaturationBrightnessPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILSaturationBrightnessPickerView.h; sourceTree = "<group>"; };
+		FFCFD46914104B9300D62529 /* ILSaturationBrightnessPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ILSaturationBrightnessPickerView.m; sourceTree = "<group>"; };
+		FFCFD4761410741B00D62529 /* ILHuePickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILHuePickerView.h; sourceTree = "<group>"; };
 		FFCFD47A14108FF900D62529 /* UIColor+GetHSB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+GetHSB.h"; sourceTree = "<group>"; };
 		FFCFD47B14108FF900D62529 /* UIColor+GetHSB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+GetHSB.m"; sourceTree = "<group>"; };
-		FFCFD47E1410B97A00D62529 /* ILColorPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILColorPicker.h; sourceTree = "<group>"; };
-		FFCFD47F1410B97A00D62529 /* ILColorPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ILColorPicker.m; sourceTree = "<group>"; };
+		FFCFD47E1410B97A00D62529 /* ILColorPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; path = ILColorPickerView.h; sourceTree = "<group>"; };
+		FFCFD47F1410B97A00D62529 /* ILColorPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ILColorPickerView.m; sourceTree = "<group>"; };
 		FFCFD4811410C33800D62529 /* ILColorPickerLayoutBottomExampleController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILColorPickerLayoutBottomExampleController.h; sourceTree = "<group>"; };
 		FFCFD4821410C33800D62529 /* ILColorPickerLayoutBottomExampleController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ILColorPickerLayoutBottomExampleController.m; sourceTree = "<group>"; };
 		FFCFD4831410C33800D62529 /* ILColorPickerLayoutBottomExampleController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ILColorPickerLayoutBottomExampleController.xib; sourceTree = "<group>"; };
@@ -56,6 +55,7 @@
 		FFCFD4871410C71A00D62529 /* ILColorPickerLayoutRightExampleController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ILColorPickerLayoutRightExampleController.m; sourceTree = "<group>"; };
 		FFCFD4C91411787700D62529 /* ILView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILView.h; sourceTree = "<group>"; };
 		FFCFD4CA1411787700D62529 /* ILView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ILView.m; sourceTree = "<group>"; };
+		FFCFD4E214117C8000D62529 /* ILHuePickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ILHuePickerView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,12 +129,12 @@
 			children = (
 				FFCFD4C91411787700D62529 /* ILView.h */,
 				FFCFD4CA1411787700D62529 /* ILView.m */,
-				FFCFD46814104B9300D62529 /* ILSaturationBrightnessPicker.h */,
-				FFCFD46914104B9300D62529 /* ILSaturationBrightnessPicker.m */,
-				FFCFD4761410741B00D62529 /* ILHuePicker.h */,
-				FFCFD4771410741B00D62529 /* ILHuePicker.m */,
-				FFCFD47E1410B97A00D62529 /* ILColorPicker.h */,
-				FFCFD47F1410B97A00D62529 /* ILColorPicker.m */,
+				FFCFD46814104B9300D62529 /* ILSaturationBrightnessPickerView.h */,
+				FFCFD46914104B9300D62529 /* ILSaturationBrightnessPickerView.m */,
+				FFCFD4761410741B00D62529 /* ILHuePickerView.h */,
+				FFCFD4E214117C8000D62529 /* ILHuePickerView.m */,
+				FFCFD47E1410B97A00D62529 /* ILColorPickerView.h */,
+				FFCFD47F1410B97A00D62529 /* ILColorPickerView.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -230,13 +230,13 @@
 				FFCFD45514104A5E00D62529 /* main.m in Sources */,
 				FFCFD45814104A5E00D62529 /* ILColorPickerExampleAppDelegate.m in Sources */,
 				FFCFD45E14104A5E00D62529 /* ILColorPickerDualExampleController.m in Sources */,
-				FFCFD46A14104B9300D62529 /* ILSaturationBrightnessPicker.m in Sources */,
-				FFCFD4781410741B00D62529 /* ILHuePicker.m in Sources */,
+				FFCFD46A14104B9300D62529 /* ILSaturationBrightnessPickerView.m in Sources */,
 				FFCFD47C14108FF900D62529 /* UIColor+GetHSB.m in Sources */,
-				FFCFD4801410B97A00D62529 /* ILColorPicker.m in Sources */,
+				FFCFD4801410B97A00D62529 /* ILColorPickerView.m in Sources */,
 				FFCFD4841410C33800D62529 /* ILColorPickerLayoutBottomExampleController.m in Sources */,
 				FFCFD4881410C71A00D62529 /* ILColorPickerLayoutRightExampleController.m in Sources */,
 				FFCFD4CB1411787700D62529 /* ILView.m in Sources */,
+				FFCFD4E314117C8000D62529 /* ILHuePickerView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

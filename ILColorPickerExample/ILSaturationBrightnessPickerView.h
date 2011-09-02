@@ -7,14 +7,14 @@
 
 #import <UIKit/UIKit.h>
 #import "ILView.h"
-#import "ILHuePicker.h"
+#import "ILHuePickerView.h"
 
-@class ILSaturationBrightnessPicker;
+@class ILSaturationBrightnessPickerView;
 
 /**
  * Delegate for ILSaturationBrightnessPicker
  */
-@protocol ILSaturationBrightnessPickerDelegate
+@protocol ILSaturationBrightnessPickerViewDelegate
 
 /**
  * Called when the color changes.
@@ -22,15 +22,15 @@
  * @param newColor The new color
  * @param picker The picker whose color changed
  */
--(void)colorPicked:(UIColor *)newColor forPicker:(ILSaturationBrightnessPicker *)picker;
+-(void)colorPicked:(UIColor *)newColor forPicker:(ILSaturationBrightnessPickerView *)picker;
 
 @end
 
 /**
  * View for picking the color's saturation and brightness
  */
-@interface ILSaturationBrightnessPicker : ILView<ILHuePickerDelegate> {
-    id<ILSaturationBrightnessPickerDelegate> delegate;
+@interface ILSaturationBrightnessPickerView : ILView<ILHuePickerViewDelegate> {
+    id<ILSaturationBrightnessPickerViewDelegate> delegate;
     
     float hue;
     float saturation;
@@ -40,7 +40,7 @@
 /**
  * Delegate
  */
-@property (assign, nonatomic) IBOutlet id<ILSaturationBrightnessPickerDelegate> delegate;
+@property (assign, nonatomic) IBOutlet id<ILSaturationBrightnessPickerViewDelegate> delegate;
 
 /**
  * Get/Set the current hue

@@ -7,11 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "ILColorPicker.h"
+#import "ILColorPickerView.h"
 
-@interface ILColorPickerLayoutBottomExampleController : UIViewController<ILColorPickerDelegate> {
+@interface ILColorPickerLayoutBottomExampleController : UIViewController<ILColorPickerViewDelegate> {
     IBOutlet UIView *colorChip;
-    IBOutlet ILColorPicker *colorPicker;
+    IBOutlet ILColorPickerView *colorPicker;
 
 }
 

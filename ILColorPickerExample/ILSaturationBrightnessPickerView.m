@@ -5,10 +5,10 @@
 //  Copyright 2011 Interfacelab LLC. All rights reserved.
 //
 
-#import "ILSaturationBrightnessPicker.h"
+#import "ILSaturationBrightnessPickerView.h"
 #import "UIColor+GetHSB.h"
 
-@implementation ILSaturationBrightnessPicker
+@implementation ILSaturationBrightnessPickerView
 
 @synthesize color, delegate, hue, saturation, brightness;
 
@@ -83,7 +83,7 @@
 
 #pragma mark - Hue Selector Delegate
 
--(void)huePicked:(float)h picker:(ILHuePicker *)picker
+-(void)huePicked:(float)h picker:(ILHuePickerView *)picker
 {
     hue=h;
 

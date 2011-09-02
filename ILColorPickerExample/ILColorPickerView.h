@@ -7,8 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "ILSaturationBrightnessPicker.h"
-#import "ILHuePicker.h"
+#import "ILSaturationBrightnessPickerView.h"
+#import "ILHuePickerView.h"
 
 /**
  * Determines the layout of the color picker
@@ -16,19 +16,19 @@
 typedef enum {
     
     /// Hue picker is at bottom
-    ILColorPickerLayoutBottom  =   0,
+    ILColorPickerViewLayoutBottom  =   0,
     
     // Hue picker is at right
-    ILColorPickerLayoutRight   =   1,
+    ILColorPickerViewLayoutRight   =   1,
     
-} ILColorPickerLayout;
+} ILColorPickerViewLayout;
 
-@class ILColorPicker;
+@class ILColorPickerView;
 
 /**
  * Delegate for the color picker
  */
-@protocol ILColorPickerDelegate
+@protocol ILColorPickerViewDelegate
 
 /**
  * Called when the user has chosen a new color
@@ -36,7 +36,7 @@ typedef enum {
  * @param color The new color
  * @param picker The calling picker
  */
--(void)colorPicked:(UIColor *)color forPicker:(ILColorPicker *)picker;
+-(void)colorPicked:(UIColor *)color forPicker:(ILColorPickerView *)picker;
 
 @end
 
@@ -44,24 +44,24 @@ typedef enum {
  * Wraps an ILSaturationBrightnessPicker and ILHuePicker into a single
  * convenient control
  */
-@interface ILColorPicker : ILView<ILSaturationBrightnessPickerDelegate> {
-    id<ILColorPickerDelegate> delegate;
+@interface ILColorPickerView : ILView<ILSaturationBrightnessPickerViewDelegate> {
+    id<ILColorPickerViewDelegate> delegate;
     
-    ILSaturationBrightnessPicker *satPicker;
-    ILHuePicker *huePicker;
+    ILSaturationBrightnessPickerView *satPicker;
+    ILHuePickerView *huePicker;
     
-    ILColorPickerLayout pickerLayout;
+    ILColorPickerViewLayout pickerLayout;
 }
 
 /**
  * Delegate
  */
-@property (assign,nonatomic) IBOutlet id<ILColorPickerDelegate> delegate;
+@property (assign,nonatomic) IBOutlet id<ILColorPickerViewDelegate> delegate;
 
 /**
  * The layout of the controls
  */
-@property (assign,nonatomic) ILColorPickerLayout pickerLayout;
+@property (assign,nonatomic) ILColorPickerViewLayout pickerLayout;
 
 /**
  * Gets/sets the current color
