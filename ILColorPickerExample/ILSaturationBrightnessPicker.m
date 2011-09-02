@@ -166,39 +166,6 @@
     brightness=hsb.brightness;
     
     [self setNeedsDisplay];
-    
-    return;
-    
-    CGColorSpaceModel model=CGColorSpaceGetModel(CGColorGetColorSpace([cc CGColor]));
-    
-    if ((model==kCGColorSpaceModelMonochrome) || (model==kCGColorSpaceModelRGB))
-    {
-        const CGFloat *c = CGColorGetComponents([cc CGColor]);  
-        
-        float x = fminf(c[0], c[1]);
-        x = fminf(x, c[2]);
-        
-        float b = fmaxf(c[0], c[1]);
-        b = fmaxf(b, c[2]);
-        
-        if (b == x) 
-        {
-            hue=0;
-            saturation=0;
-            brightness=b;
-        }
-        else
-        {
-            float f = (c[0] == x) ? c[1] - c[2] : ((c[1] == x) ? c[2] - c[0] : c[0] - c[1]);
-            int i = (c[0] == x) ? 3 : ((c[1] == x) ? 5 : 1);
-            
-            hue=((i - f /(b - x))/6);
-            saturation=(b - x)/b;
-            brightness=b;
-        }
-        
-        [self setNeedsDisplay];
-    }
 }
 
 -(UIColor *)color
