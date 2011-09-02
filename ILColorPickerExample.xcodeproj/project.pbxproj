@@ -17,13 +17,13 @@
 		FFCFD45E14104A5E00D62529 /* ILColorPickerDualExampleController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFCFD45D14104A5E00D62529 /* ILColorPickerDualExampleController.m */; };
 		FFCFD46114104A5E00D62529 /* ILColorPickerDualExampleController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FFCFD45F14104A5E00D62529 /* ILColorPickerDualExampleController.xib */; };
 		FFCFD46A14104B9300D62529 /* ILSaturationBrightnessPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = FFCFD46914104B9300D62529 /* ILSaturationBrightnessPicker.m */; };
-		FFCFD46D14104BE400D62529 /* ILView.m in Sources */ = {isa = PBXBuildFile; fileRef = FFCFD46B14104BE400D62529 /* ILView.m */; };
 		FFCFD4781410741B00D62529 /* ILHuePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = FFCFD4771410741B00D62529 /* ILHuePicker.m */; };
 		FFCFD47C14108FF900D62529 /* UIColor+GetHSB.m in Sources */ = {isa = PBXBuildFile; fileRef = FFCFD47B14108FF900D62529 /* UIColor+GetHSB.m */; };
 		FFCFD4801410B97A00D62529 /* ILColorPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = FFCFD47F1410B97A00D62529 /* ILColorPicker.m */; };
 		FFCFD4841410C33800D62529 /* ILColorPickerLayoutBottomExampleController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFCFD4821410C33800D62529 /* ILColorPickerLayoutBottomExampleController.m */; };
 		FFCFD4851410C33800D62529 /* ILColorPickerLayoutBottomExampleController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FFCFD4831410C33800D62529 /* ILColorPickerLayoutBottomExampleController.xib */; };
 		FFCFD4881410C71A00D62529 /* ILColorPickerLayoutRightExampleController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFCFD4871410C71A00D62529 /* ILColorPickerLayoutRightExampleController.m */; };
+		FFCFD4CB1411787700D62529 /* ILView.m in Sources */ = {isa = PBXBuildFile; fileRef = FFCFD4CA1411787700D62529 /* ILView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,8 +43,6 @@
 		FFCFD46014104A5E00D62529 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ILColorPickerDualExampleController.xib; sourceTree = "<group>"; };
 		FFCFD46814104B9300D62529 /* ILSaturationBrightnessPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILSaturationBrightnessPicker.h; sourceTree = "<group>"; };
 		FFCFD46914104B9300D62529 /* ILSaturationBrightnessPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ILSaturationBrightnessPicker.m; sourceTree = "<group>"; };
-		FFCFD46B14104BE400D62529 /* ILView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ILView.m; path = ../../InstaCam/Source/Views/ILView.m; sourceTree = "<group>"; };
-		FFCFD46C14104BE400D62529 /* ILView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ILView.h; path = ../../InstaCam/Source/Views/ILView.h; sourceTree = "<group>"; };
 		FFCFD4761410741B00D62529 /* ILHuePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILHuePicker.h; sourceTree = "<group>"; };
 		FFCFD4771410741B00D62529 /* ILHuePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ILHuePicker.m; sourceTree = "<group>"; };
 		FFCFD47A14108FF900D62529 /* UIColor+GetHSB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+GetHSB.h"; sourceTree = "<group>"; };
@@ -56,6 +54,8 @@
 		FFCFD4831410C33800D62529 /* ILColorPickerLayoutBottomExampleController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ILColorPickerLayoutBottomExampleController.xib; sourceTree = "<group>"; };
 		FFCFD4861410C71900D62529 /* ILColorPickerLayoutRightExampleController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILColorPickerLayoutRightExampleController.h; sourceTree = "<group>"; };
 		FFCFD4871410C71A00D62529 /* ILColorPickerLayoutRightExampleController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ILColorPickerLayoutRightExampleController.m; sourceTree = "<group>"; };
+		FFCFD4C91411787700D62529 /* ILView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILView.h; sourceTree = "<group>"; };
+		FFCFD4CA1411787700D62529 /* ILView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ILView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,8 +127,8 @@
 		FFCFD46714104B7500D62529 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				FFCFD46C14104BE400D62529 /* ILView.h */,
-				FFCFD46B14104BE400D62529 /* ILView.m */,
+				FFCFD4C91411787700D62529 /* ILView.h */,
+				FFCFD4CA1411787700D62529 /* ILView.m */,
 				FFCFD46814104B9300D62529 /* ILSaturationBrightnessPicker.h */,
 				FFCFD46914104B9300D62529 /* ILSaturationBrightnessPicker.m */,
 				FFCFD4761410741B00D62529 /* ILHuePicker.h */,
@@ -231,12 +231,12 @@
 				FFCFD45814104A5E00D62529 /* ILColorPickerExampleAppDelegate.m in Sources */,
 				FFCFD45E14104A5E00D62529 /* ILColorPickerDualExampleController.m in Sources */,
 				FFCFD46A14104B9300D62529 /* ILSaturationBrightnessPicker.m in Sources */,
-				FFCFD46D14104BE400D62529 /* ILView.m in Sources */,
 				FFCFD4781410741B00D62529 /* ILHuePicker.m in Sources */,
 				FFCFD47C14108FF900D62529 /* UIColor+GetHSB.m in Sources */,
 				FFCFD4801410B97A00D62529 /* ILColorPicker.m in Sources */,
 				FFCFD4841410C33800D62529 /* ILColorPickerLayoutBottomExampleController.m in Sources */,
 				FFCFD4881410C71A00D62529 /* ILColorPickerLayoutRightExampleController.m in Sources */,
+				FFCFD4CB1411787700D62529 /* ILView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,6 +308,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUILD_STYLE = Debug;
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -322,6 +323,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUILD_STYLE = Release;
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ILColorPickerExample/ILColorPickerExample-Prefix.pch";
@@ -351,6 +353,7 @@
 				FFCFD46614104A5E00D62529 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
