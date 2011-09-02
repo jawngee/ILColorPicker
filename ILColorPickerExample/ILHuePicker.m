@@ -17,7 +17,7 @@
 
 @implementation ILHuePicker
 
-@synthesize color, delegate, hue;
+@synthesize color, delegate, hue, pickerOrientation;
 
 #pragma mark - Setup
 
@@ -28,6 +28,7 @@
     self.clipsToBounds=YES;
     
     hue=0.5;
+    pickerOrientation=ILHuePickerOrientationHorizontal;
 }
 
 #pragma mark - Drawing
@@ -62,30 +63,49 @@
                      nil];
     
     CGGradientRef grad=CGGradientCreateWithColors(colorSpace, (CFArrayRef)colors, locs);
-    CGContextDrawLinearGradient(context, grad, CGPointMake(rect.size.width,0), CGPointMake(0, 0), 0);
+    if (pickerOrientation==ILHuePickerOrientationHorizontal)
+        CGContextDrawLinearGradient(context, grad, CGPointMake(rect.size.width,0), CGPointMake(0, 0), 0);
+    else
+        CGContextDrawLinearGradient(context, grad, CGPointMake(0,rect.size.height), CGPointMake(0, 0), 0);
+        
     CGGradientRelease(grad);
      
     CGColorSpaceRelease(colorSpace);
     
     // Draw the indicator
-    float pos=rect.size.width*hue;
-    float indLength=rect.size.height/3;
+    float pos=(pickerOrientation==ILHuePickerOrientationHorizontal) ? rect.size.width*hue : rect.size.height*hue;
+    float indLength=(pickerOrientation==ILHuePickerOrientationHorizontal) ? rect.size.height/3 : rect.size.width/3;
     
     CGContextSetFillColorWithColor(context, [[UIColor blackColor] CGColor]);
     CGContextSetStrokeColorWithColor(context, [[UIColor whiteColor] CGColor]);
     CGContextSetLineWidth(context, 0.5);
     CGContextSetShadow(context, CGSizeMake(0, 0), 4);
 
-    CGContextMoveToPoint(context, pos-(indLength/2), -1);
-    CGContextAddLineToPoint(context, pos+(indLength/2), -1);
-    CGContextAddLineToPoint(context, pos, indLength);
-    CGContextAddLineToPoint(context, pos-(indLength/2), -1);
+    if (pickerOrientation==ILHuePickerOrientationHorizontal)
+    {
+        CGContextMoveToPoint(context, pos-(indLength/2), -1);
+        CGContextAddLineToPoint(context, pos+(indLength/2), -1);
+        CGContextAddLineToPoint(context, pos, indLength);
+        CGContextAddLineToPoint(context, pos-(indLength/2), -1);
 
-    CGContextMoveToPoint(context, pos-(indLength/2), rect.size.height+1);
-    CGContextAddLineToPoint(context, pos+(indLength/2), rect.size.height+1);
-    CGContextAddLineToPoint(context, pos, rect.size.height-indLength);
-    CGContextAddLineToPoint(context, pos-(indLength/2), rect.size.height+1);
-
+        CGContextMoveToPoint(context, pos-(indLength/2), rect.size.height+1);
+        CGContextAddLineToPoint(context, pos+(indLength/2), rect.size.height+1);
+        CGContextAddLineToPoint(context, pos, rect.size.height-indLength);
+        CGContextAddLineToPoint(context, pos-(indLength/2), rect.size.height+1);
+    }
+    else
+    {
+        CGContextMoveToPoint(context, -1, pos-(indLength/2));
+        CGContextAddLineToPoint(context, -1, pos+(indLength/2));
+        CGContextAddLineToPoint(context, indLength, pos);
+        CGContextAddLineToPoint(context, -1, pos-(indLength/2));
+        
+        CGContextMoveToPoint(context, rect.size.width+1, pos-(indLength/2));
+        CGContextAddLineToPoint(context, rect.size.width+1, pos+(indLength/2));
+        CGContextAddLineToPoint(context, rect.size.width-indLength, pos);
+        CGContextAddLineToPoint(context, rect.size.width+1, pos-(indLength/2));
+    }
+    
     CGContextClosePath(context);
     CGContextDrawPath(context, kCGPathFillStroke);
 }
@@ -96,12 +116,15 @@
 {
     CGPoint pos=[[touches anyObject] locationInView:self];
     
-    if (pos.x<0)
+    float p=(pickerOrientation==ILHuePickerOrientationHorizontal) ? pos.x : pos.y;
+    float b=(pickerOrientation==ILHuePickerOrientationHorizontal) ? self.frame.size.width : self.frame.size.height;
+    
+    if (p<0)
         hue=0;
-    else if (pos.x>self.frame.size.width)
+    else if (p>b)
         hue=1;
     else
-        hue=pos.x/self.frame.size.width;
+        hue=p/b;
     
     [delegate huePicked:hue picker:self];
     
@@ -128,6 +151,12 @@
 -(void)setHue:(float)h
 {
     hue=h;
+    [self setNeedsDisplay];
+}
+
+-(void)setPickerOrientation:(ILHuePickerOrientation)po
+{
+    pickerOrientation=po;
     [self setNeedsDisplay];
 }
 

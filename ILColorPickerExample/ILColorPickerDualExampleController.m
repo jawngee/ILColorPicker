@@ -6,9 +6,9 @@
 //  Copyright 2011 Interfacelab LLC. All rights reserved.
 //
 
-#import "ILColorPickerExampleViewController.h"
+#import "ILColorPickerDualExampleController.h"
 
-@implementation ILColorPickerExampleViewController
+@implementation ILColorPickerDualExampleController
 
 #pragma mark - View lifecycle
 
@@ -30,7 +30,7 @@
 
 #pragma mark - ILSaturationBrightnessPickerDelegate implementation
 
--(void)colorChanged:(UIColor *)newColor forPicker:(ILSaturationBrightnessPicker *)picker
+-(void)colorPicked:(UIColor *)newColor forPicker:(ILSaturationBrightnessPicker *)picker
 {
     colorChip.backgroundColor=newColor;
 }

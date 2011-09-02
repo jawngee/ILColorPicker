@@ -87,7 +87,7 @@
 {
     hue=h;
 
-    [delegate colorChanged:[UIColor colorWithHue:hue saturation:saturation brightness:brightness alpha:1.0] forPicker:self];
+    [delegate colorPicked:[UIColor colorWithHue:hue saturation:saturation brightness:brightness alpha:1.0] forPicker:self];
 
     [self setNeedsDisplay];
 }
@@ -115,7 +115,7 @@
     else
         brightness=1-(pos.y/h);
     
-    [delegate colorChanged:[UIColor colorWithHue:hue saturation:saturation brightness:brightness alpha:1.0] forPicker:self];
+    [delegate colorPicked:[UIColor colorWithHue:hue saturation:saturation brightness:brightness alpha:1.0] forPicker:self];
     
     [self setNeedsDisplay];
 }

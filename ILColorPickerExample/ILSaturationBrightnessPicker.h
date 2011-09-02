@@ -22,7 +22,7 @@
  * @param newColor The new color
  * @param picker The picker whose color changed
  */
--(void)colorChanged:(UIColor *)newColor forPicker:(ILSaturationBrightnessPicker *)picker;
+-(void)colorPicked:(UIColor *)newColor forPicker:(ILSaturationBrightnessPicker *)picker;
 
 @end
 

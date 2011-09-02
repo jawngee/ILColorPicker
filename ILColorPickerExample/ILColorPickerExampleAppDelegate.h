@@ -8,14 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-@class ILColorPickerExampleViewController;
+@class ILColorPickerDualExampleController;
 
 @interface ILColorPickerExampleAppDelegate : NSObject <UIApplicationDelegate> {
-
+    UITabBarController *tabController;
 }
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;
-
-@property (nonatomic, retain) IBOutlet ILColorPickerExampleViewController *viewController;
+@property (nonatomic, retain) IBOutlet UITabBarController *tabController;
 
 @end

@@ -8,6 +8,14 @@
 #import <UIKit/UIKit.h>
 #import "ILView.h"
 
+/**
+ * Controls the orientation of the picker
+ */
+typedef enum {
+    ILHuePickerOrientationHorizontal     =   0,
+    ILHuePickerOrientationVertical       =   1
+} ILHuePickerOrientation;
+
 @class ILHuePicker;
 
 /**
@@ -31,6 +39,7 @@
 @interface ILHuePicker : ILView {
     id<ILHuePickerDelegate> delegate;
     float hue;
+    ILHuePickerOrientation pickerOrientation;
 }
 
 /**
@@ -47,5 +56,11 @@
  * The current color
  */
 @property (assign, nonatomic) UIColor *color;
+
+/**
+ * Orientation
+ */
+@property (assign, nonatomic) ILHuePickerOrientation pickerOrientation;
+
 
 @end
