@@ -1,6 +1,9 @@
 Color Picker for iOS
 ====================
 
+[![](http://s3.amazonaws.com/cocoa_controls_production/ios_screens/342/full.jpg?1314944655)](http://s3.amazonaws.com/cocoa_controls_production/ios_screens/342/full.jpg?1314944655)
+
+
 Source includes two controls that work in unison with each other
 to provide users the ability to pick color in a fashion identical
 to photoshop.
