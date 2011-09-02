@@ -1,0 +1,42 @@
+Color Picker for iOS
+====================
+
+Source includes two controls that work in unison with each other
+to provide users the ability to pick color in a fashion identical
+to photoshop.
+
+Designed not to use images or any other external dependencies 
+beyond the classes.
+
+ILSaturationBrightnessPicker
+----------------------------
+This control presents a saturation and brightness gradient for
+a specific hue, similar to photoshop's color picker.
+
+ILHuePicker
+-----------
+This control presents a horizontal gradient that displays the
+entire range of hues.  Typically, user would pick a hue, which 
+updates an ILSaturationBrightnessPicker so that they can then
+pick the saturation and brightness.
+
+UIColor+GetHSB
+--------------
+This category will allow you to access the HSB values of a UIColor
+easily.
+
+ILView
+------
+This is the base view that implements some stuff to make writing
+custom views a little easier.
+
+
+Usage
+=====
+
+See the enclosed example project.  It's pretty straight forward.
+
+
+License
+=======
+Public domain, use as you wish.

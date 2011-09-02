@@ -1,0 +1,336 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FFCFD44814104A5E00D62529 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFCFD44714104A5E00D62529 /* UIKit.framework */; };
+		FFCFD44A14104A5E00D62529 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFCFD44914104A5E00D62529 /* Foundation.framework */; };
+		FFCFD44C14104A5E00D62529 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFCFD44B14104A5E00D62529 /* CoreGraphics.framework */; };
+		FFCFD45214104A5E00D62529 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FFCFD45014104A5E00D62529 /* InfoPlist.strings */; };
+		FFCFD45514104A5E00D62529 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FFCFD45414104A5E00D62529 /* main.m */; };
+		FFCFD45814104A5E00D62529 /* ILColorPickerExampleAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FFCFD45714104A5E00D62529 /* ILColorPickerExampleAppDelegate.m */; };
+		FFCFD45B14104A5E00D62529 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = FFCFD45914104A5E00D62529 /* MainWindow.xib */; };
+		FFCFD45E14104A5E00D62529 /* ILColorPickerExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFCFD45D14104A5E00D62529 /* ILColorPickerExampleViewController.m */; };
+		FFCFD46114104A5E00D62529 /* ILColorPickerExampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FFCFD45F14104A5E00D62529 /* ILColorPickerExampleViewController.xib */; };
+		FFCFD46A14104B9300D62529 /* ILSaturationBrightnessPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = FFCFD46914104B9300D62529 /* ILSaturationBrightnessPicker.m */; };
+		FFCFD46D14104BE400D62529 /* ILView.m in Sources */ = {isa = PBXBuildFile; fileRef = FFCFD46B14104BE400D62529 /* ILView.m */; };
+		FFCFD4781410741B00D62529 /* ILHuePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = FFCFD4771410741B00D62529 /* ILHuePicker.m */; };
+		FFCFD47C14108FF900D62529 /* UIColor+GetHSB.m in Sources */ = {isa = PBXBuildFile; fileRef = FFCFD47B14108FF900D62529 /* UIColor+GetHSB.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		FFCFD44314104A5E00D62529 /* ILColorPickerExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ILColorPickerExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFCFD44714104A5E00D62529 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		FFCFD44914104A5E00D62529 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		FFCFD44B14104A5E00D62529 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		FFCFD44F14104A5E00D62529 /* ILColorPickerExample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ILColorPickerExample-Info.plist"; sourceTree = "<group>"; };
+		FFCFD45114104A5E00D62529 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FFCFD45314104A5E00D62529 /* ILColorPickerExample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ILColorPickerExample-Prefix.pch"; sourceTree = "<group>"; };
+		FFCFD45414104A5E00D62529 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FFCFD45614104A5E00D62529 /* ILColorPickerExampleAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ILColorPickerExampleAppDelegate.h; sourceTree = "<group>"; };
+		FFCFD45714104A5E00D62529 /* ILColorPickerExampleAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ILColorPickerExampleAppDelegate.m; sourceTree = "<group>"; };
+		FFCFD45A14104A5E00D62529 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		FFCFD45C14104A5E00D62529 /* ILColorPickerExampleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ILColorPickerExampleViewController.h; sourceTree = "<group>"; };
+		FFCFD45D14104A5E00D62529 /* ILColorPickerExampleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ILColorPickerExampleViewController.m; sourceTree = "<group>"; };
+		FFCFD46014104A5E00D62529 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ILColorPickerExampleViewController.xib; sourceTree = "<group>"; };
+		FFCFD46814104B9300D62529 /* ILSaturationBrightnessPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILSaturationBrightnessPicker.h; sourceTree = "<group>"; };
+		FFCFD46914104B9300D62529 /* ILSaturationBrightnessPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ILSaturationBrightnessPicker.m; sourceTree = "<group>"; };
+		FFCFD46B14104BE400D62529 /* ILView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ILView.m; path = ../../InstaCam/Source/Views/ILView.m; sourceTree = "<group>"; };
+		FFCFD46C14104BE400D62529 /* ILView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ILView.h; path = ../../InstaCam/Source/Views/ILView.h; sourceTree = "<group>"; };
+		FFCFD4761410741B00D62529 /* ILHuePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILHuePicker.h; sourceTree = "<group>"; };
+		FFCFD4771410741B00D62529 /* ILHuePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ILHuePicker.m; sourceTree = "<group>"; };
+		FFCFD47A14108FF900D62529 /* UIColor+GetHSB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+GetHSB.h"; sourceTree = "<group>"; };
+		FFCFD47B14108FF900D62529 /* UIColor+GetHSB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+GetHSB.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FFCFD44014104A5E00D62529 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFCFD44814104A5E00D62529 /* UIKit.framework in Frameworks */,
+				FFCFD44A14104A5E00D62529 /* Foundation.framework in Frameworks */,
+				FFCFD44C14104A5E00D62529 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FFCFD43814104A5E00D62529 = {
+			isa = PBXGroup;
+			children = (
+				FFCFD44D14104A5E00D62529 /* ILColorPickerExample */,
+				FFCFD44614104A5E00D62529 /* Frameworks */,
+				FFCFD44414104A5E00D62529 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FFCFD44414104A5E00D62529 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FFCFD44314104A5E00D62529 /* ILColorPickerExample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FFCFD44614104A5E00D62529 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FFCFD44714104A5E00D62529 /* UIKit.framework */,
+				FFCFD44914104A5E00D62529 /* Foundation.framework */,
+				FFCFD44B14104A5E00D62529 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FFCFD44D14104A5E00D62529 /* ILColorPickerExample */ = {
+			isa = PBXGroup;
+			children = (
+				FFCFD47D1410A9E000D62529 /* Controllers */,
+				FFCFD47914108FE300D62529 /* Categories */,
+				FFCFD46714104B7500D62529 /* Views */,
+				FFCFD45614104A5E00D62529 /* ILColorPickerExampleAppDelegate.h */,
+				FFCFD45714104A5E00D62529 /* ILColorPickerExampleAppDelegate.m */,
+				FFCFD45914104A5E00D62529 /* MainWindow.xib */,
+				FFCFD44E14104A5E00D62529 /* Supporting Files */,
+			);
+			path = ILColorPickerExample;
+			sourceTree = "<group>";
+		};
+		FFCFD44E14104A5E00D62529 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FFCFD44F14104A5E00D62529 /* ILColorPickerExample-Info.plist */,
+				FFCFD45014104A5E00D62529 /* InfoPlist.strings */,
+				FFCFD45314104A5E00D62529 /* ILColorPickerExample-Prefix.pch */,
+				FFCFD45414104A5E00D62529 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FFCFD46714104B7500D62529 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FFCFD46C14104BE400D62529 /* ILView.h */,
+				FFCFD46B14104BE400D62529 /* ILView.m */,
+				FFCFD46814104B9300D62529 /* ILSaturationBrightnessPicker.h */,
+				FFCFD46914104B9300D62529 /* ILSaturationBrightnessPicker.m */,
+				FFCFD4761410741B00D62529 /* ILHuePicker.h */,
+				FFCFD4771410741B00D62529 /* ILHuePicker.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		FFCFD47914108FE300D62529 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				FFCFD47A14108FF900D62529 /* UIColor+GetHSB.h */,
+				FFCFD47B14108FF900D62529 /* UIColor+GetHSB.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		FFCFD47D1410A9E000D62529 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FFCFD45C14104A5E00D62529 /* ILColorPickerExampleViewController.h */,
+				FFCFD45D14104A5E00D62529 /* ILColorPickerExampleViewController.m */,
+				FFCFD45F14104A5E00D62529 /* ILColorPickerExampleViewController.xib */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FFCFD44214104A5E00D62529 /* ILColorPickerExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FFCFD46414104A5E00D62529 /* Build configuration list for PBXNativeTarget "ILColorPickerExample" */;
+			buildPhases = (
+				FFCFD43F14104A5E00D62529 /* Sources */,
+				FFCFD44014104A5E00D62529 /* Frameworks */,
+				FFCFD44114104A5E00D62529 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ILColorPickerExample;
+			productName = ILColorPickerExample;
+			productReference = FFCFD44314104A5E00D62529 /* ILColorPickerExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FFCFD43A14104A5E00D62529 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "Interfacelab LLC";
+			};
+			buildConfigurationList = FFCFD43D14104A5E00D62529 /* Build configuration list for PBXProject "ILColorPickerExample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = FFCFD43814104A5E00D62529;
+			productRefGroup = FFCFD44414104A5E00D62529 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FFCFD44214104A5E00D62529 /* ILColorPickerExample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FFCFD44114104A5E00D62529 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFCFD45214104A5E00D62529 /* InfoPlist.strings in Resources */,
+				FFCFD45B14104A5E00D62529 /* MainWindow.xib in Resources */,
+				FFCFD46114104A5E00D62529 /* ILColorPickerExampleViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FFCFD43F14104A5E00D62529 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFCFD45514104A5E00D62529 /* main.m in Sources */,
+				FFCFD45814104A5E00D62529 /* ILColorPickerExampleAppDelegate.m in Sources */,
+				FFCFD45E14104A5E00D62529 /* ILColorPickerExampleViewController.m in Sources */,
+				FFCFD46A14104B9300D62529 /* ILSaturationBrightnessPicker.m in Sources */,
+				FFCFD46D14104BE400D62529 /* ILView.m in Sources */,
+				FFCFD4781410741B00D62529 /* ILHuePicker.m in Sources */,
+				FFCFD47C14108FF900D62529 /* UIColor+GetHSB.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FFCFD45014104A5E00D62529 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FFCFD45114104A5E00D62529 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		FFCFD45914104A5E00D62529 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FFCFD45A14104A5E00D62529 /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		FFCFD45F14104A5E00D62529 /* ILColorPickerExampleViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FFCFD46014104A5E00D62529 /* en */,
+			);
+			name = ILColorPickerExampleViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FFCFD46214104A5E00D62529 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				BUILD_STYLE = Debug;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FFCFD46314104A5E00D62529 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				BUILD_STYLE = Release;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		FFCFD46514104A5E00D62529 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ILColorPickerExample/ILColorPickerExample-Prefix.pch";
+				INFOPLIST_FILE = "ILColorPickerExample/ILColorPickerExample-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		FFCFD46614104A5E00D62529 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ILColorPickerExample/ILColorPickerExample-Prefix.pch";
+				INFOPLIST_FILE = "ILColorPickerExample/ILColorPickerExample-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FFCFD43D14104A5E00D62529 /* Build configuration list for PBXProject "ILColorPickerExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFCFD46214104A5E00D62529 /* Debug */,
+				FFCFD46314104A5E00D62529 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FFCFD46414104A5E00D62529 /* Build configuration list for PBXNativeTarget "ILColorPickerExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFCFD46514104A5E00D62529 /* Debug */,
+				FFCFD46614104A5E00D62529 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FFCFD43A14104A5E00D62529 /* Project object */;
+}
